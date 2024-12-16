@@ -1,0 +1,70 @@
+/* Hamburger menu */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif: Menu Hamburger */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #0075fa;
+        width: 200px;
+        padding: 20px;
+        flex-direction: column;
+        border-radius: 8px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+/* Foto Profil */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+    object-fit: cover;
+    border: 5px solid #0e0c0a;
+}
+
+/* Styling untuk mobile */
+@media (max-width: 768px) {
+    #about .about-content {
+        text-align: center;
+    }
+    .profile-img {
+        margin: 20px auto;
+    }
+}
